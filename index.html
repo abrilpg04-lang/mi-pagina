@@ -1,84 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Portafolio Escolar</title>
-    <style>
-        body{
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #f7f9fc;
-            margin: 0;
-            color: #333;
-        }
-        header{
-            text-align: center;
-            padding: 30px 20px;
-            background-color: #ffffff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-        h1{
-            margin: 0;
-            color: #2a4d9b;
-        }
-        section{
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-        .card{
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 14px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-        }
-        h2{
-            color: #2a4d9b;
-            margin-top: 0;
-        }
-        .btn{
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 14px;
-            background-color: #2a4d9b;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 14px;
-        }
-        .btn:hover{
-            background-color: #1d3570;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Portafolio Escolar</title>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background:#f4f6fb;
+        margin:0;
+        text-align:center;
+    }
+    h1{
+        color:#2b6cb0;
+        margin-top:30px;
+    }
+    .card{
+        background:white;
+        margin:20px auto;
+        padding:20px;
+        width:85%;
+        max-width:600px;
+        border-radius:12px;
+        box-shadow:0 4px 12px rgba(0,0,0,0.1);
+        text-align:left;
+    }
+    .btn{
+        display:inline-block;
+        margin-top:12px;
+        padding:10px 14px;
+        background:#38a169;
+        color:white;
+        border-radius:8px;
+        text-decoration:none;
+        font-weight:bold;
+    }
+    .btn:hover{
+        background:#2f855a;
+    }
+</style>
 </head>
 
 <body>
 
-<header>
-    <h1>Portafolio Escolar</h1>
-    <p>Trabajos académicos</p>
-</header>
+<h1>📘 Portafolio Escolar — Abril</h1>
+<p>Ejemplos de mis trabajos</p>
 
-<section>
+<div class="card">
+    <h2>Conciencia histórica III: Problemas contemporáneos</h2>
+    <p>Ensayos e investigaciones actuales.</p>
+    <a class="btn" href="historia.pdf" target="_blank">📄 Tarea subida</a>
+</div>
 
-    <div class="card">
-        <h2>Conciencia histórica III: Problemas contemporáneos</h2>
-        <p>Investigaciones y análisis históricos actuales.</p>
-        <a class="btn" href="tarea-historia.pdf" target="_blank">Ver tarea (PDF)</a>
-    </div>
+<div class="card">
+    <h2>Formación socioemocional VI</h2>
+    <p>Actividades de desarrollo personal.</p>
+    <a class="btn" href="socioemocional.pdf" target="_blank">📄 Tarea subida</a>
+</div>
 
-    <div class="card">
-        <h2>Formación socioemocional VI</h2>
-        <p>Actividades de desarrollo personal y emocional.</p>
-        <a class="btn" href="tarea-socioemocional.pdf" target="_blank">Ver tarea (PDF)</a>
-    </div>
-
-    <div class="card">
-        <h2>Temas selectos de Matemáticas III</h2>
-        <p>Ejercicios y problemas matemáticos avanzados.</p>
-        <a class="btn" href="tarea-matematicas.pdf" target="_blank">Ver tarea (PDF)</a>
-    </div>
-
-</section>
+<div class="card">
+    <h2>Temas selectos de Matemáticas III</h2>
+    <p>Problemas y ejercicios matemáticos.</p>
+    <a class="btn" href="mate.pdf" target="_blank">📄 Tarea subida</a>
+</div>
 
 </body>
 </html>
