@@ -3,65 +3,125 @@
 <head>
 <meta charset="UTF-8">
 <title>Portafolio Escolar</title>
+
 <style>
     body{
-        font-family: Arial, sans-serif;
-        background:#f4f6fb;
+        font-family: 'Segoe UI', sans-serif;
+        background:#f6f8fc;
         margin:0;
+        color:#333;
+    }
+
+    /* Portada */
+    .portada{
+        height:280px;
+        background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+        url("https://images.unsplash.com/photo-1509062522246-3755977927d7");
+        background-size:cover;
+        background-position:center;
+        display:flex;
+        align-items:center;
+        justify-content:center;
         text-align:center;
+        color:white;
     }
-    h1{
-        color:#2b6cb0;
-        margin-top:30px;
+
+    .portada h1{
+        margin:0;
+        font-size:34px;
+        letter-spacing:1px;
     }
+
+    .portada p{
+        margin-top:8px;
+        font-size:16px;
+        opacity:0.9;
+    }
+
+    /* Contenido */
+    .contenedor{
+        max-width:900px;
+        margin:40px auto;
+        padding:0 20px;
+    }
+
     .card{
         background:white;
-        margin:20px auto;
-        padding:20px;
-        width:85%;
-        max-width:600px;
-        border-radius:12px;
-        box-shadow:0 4px 12px rgba(0,0,0,0.1);
-        text-align:left;
+        padding:22px;
+        margin-bottom:22px;
+        border-radius:14px;
+        box-shadow:0 6px 14px rgba(0,0,0,0.08);
     }
+
+    .card h2{
+        margin-top:0;
+        color:#2b6cb0;
+    }
+
+    .card p{
+        margin-bottom:12px;
+    }
+
     .btn{
         display:inline-block;
-        margin-top:12px;
         padding:10px 14px;
         background:#38a169;
         color:white;
         border-radius:8px;
         text-decoration:none;
-        font-weight:bold;
+        font-weight:600;
+        font-size:14px;
     }
+
     .btn:hover{
         background:#2f855a;
+    }
+
+    footer{
+        text-align:center;
+        padding:25px;
+        font-size:13px;
+        color:#777;
     }
 </style>
 </head>
 
 <body>
 
-<h1>📘 Portafolio Escolar — Abril</h1>
-<p>Ejemplos de mis trabajos</p>
-
-<div class="card">
-    <h2>Conciencia histórica III: Problemas contemporáneos</h2>
-    <p>Ensayos e investigaciones actuales.</p>
-    <a class="btn" href="historia.pdf" target="_blank">📄 Tarea subida</a>
+<!-- Portada -->
+<div class="portada">
+    <div>
+        <h1>📘 Portafolio Escolar</h1>
+        <p>Materias y trabajos académicos</p>
+    </div>
 </div>
 
-<div class="card">
-    <h2>Formación socioemocional VI</h2>
-    <p>Actividades de desarrollo personal.</p>
-    <a class="btn" href="socioemocional.pdf" target="_blank">📄 Tarea subida</a>
+<!-- Contenido -->
+<div class="contenedor">
+
+    <div class="card">
+        <h2>Conciencia histórica III: Problemas contemporáneos</h2>
+        <p>Ensayos e investigaciones sobre temas históricos actuales.</p>
+        <a class="btn" href="historia.pdf" target="_blank">📄 Tarea subida</a>
+    </div>
+
+    <div class="card">
+        <h2>Formación socioemocional VI</h2>
+        <p>Actividades de desarrollo personal y habilidades emocionales.</p>
+        <a class="btn" href="socioemocional.pdf" target="_blank">📄 Tarea subida</a>
+    </div>
+
+    <div class="card">
+        <h2>Temas selectos de Matemáticas III</h2>
+        <p>Problemas, ejercicios y aplicaciones matemáticas.</p>
+        <a class="btn" href="mate.pdf" target="_blank">📄 Tarea subida</a>
+    </div>
+
 </div>
 
-<div class="card">
-    <h2>Temas selectos de Matemáticas III</h2>
-    <p>Problemas y ejercicios matemáticos.</p>
-    <a class="btn" href="mate.pdf" target="_blank">📄 Tarea subida</a>
-</div>
+<footer>
+    © 2026 · Portafolio académico
+</footer>
 
 </body>
 </html>
